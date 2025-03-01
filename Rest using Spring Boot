@@ -1,0 +1,40 @@
+Now we are losing jsp pages and using react and we are introducing react
+Json data will be passed from frontend to backend and vice versa through API
+
+REST(Representational State Transfer)
+
+server(resource)
+job, user, admin, employer - entity
+state(current state of the data) is sent to the client
+Stateless- A communication method in which server completes every client request independently of all previous requests.
+(who you are why you are asking every time)
+
+in urls use nouns
+/jobs, /job
+methods will change (get, post, update, delete)
+
+Xml is also used to send/recive the data but xml is old and json uses less memory.
+
+HTTP method: (Hyper Text Transfer Protocol)
+Get : read data (GetMapping)
+Post : create data (PostMapping)
+put : update data (PutMapping)
+delete: delete data (DeleteMapping)
+
+by default we have get on browser 
+
+for post and other request we use postman
+
+Understanding the React UI
+
+To connect to React frontend all we have to do is make changes in the Controller 
+1. Change @Controller to @RestController
+2. We are sending jsp pages before now we have to send json data
+3. change the return type from string to whatever the type is
+4. @GetMapping("jobPosts") we decide the endpoint of the backend
+5. Cross orgin error is resolved by @CrossOrigin(origins = "http://localhost:3000/")
+
+
+
+
+
